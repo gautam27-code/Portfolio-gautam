@@ -701,6 +701,7 @@ img.pg4img {
 
   #bottom-part2 {
     width: 70%;
+    padding-top: 10vh;
     /* background-color: aqua; */
   }
 
@@ -712,7 +713,7 @@ img.pg4img {
   #bottom-part2 p {
     font-weight: 200;
     margin-top: 2vw;
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   #page2 #gooey {
