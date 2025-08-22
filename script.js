@@ -117,13 +117,3 @@ document.addEventListener("DOMContentLoaded", function () {
   loaderAnimation();
 });
 
-
-gsap.set(".flair", {xPercent: -50, yPercent: -50});
-
-let xSetter = gsap.quickSetter(".flair", "x", "px") //apply it to the #id element's x property and append a "px" unit
-let ySetter = gsap.quickSetter(".flair", "y", "px") //apply it to the #id element's x property and append a "px" unit
-
-window.addEventListener("mousemove", e => {  
-  xSetter(e.x)
-  ySetter(e.y)
-});
