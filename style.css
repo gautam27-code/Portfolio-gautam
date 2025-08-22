@@ -549,7 +549,7 @@ img.pg4img {
   background-color: #00000097;
   position: fixed;
   z-index: 99;
-  top: -130%;
+  top: -200%;
   transition: all ease 0.8s;
 }
 #full-div1 {

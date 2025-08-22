@@ -75,7 +75,7 @@ function menuAnimation() {
       navimg.style.opacity = 0;
       flag = 1;
     } else {
-      full.style.top = "-120%";
+      full.style.top = "-140%";
       navimg.style.opacity = 1;
       flag = 0;
     }
