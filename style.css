@@ -7,11 +7,6 @@
   src: url(./NeueHaasDisplayLight.ttf);
   font-weight: 100;
 }
-#main {
-  /* background-color: black; */
-  z-index: 10;
-  position: relative;
-}
 
 /* .page-4 {
   background-color: #efeae3;
@@ -407,17 +402,25 @@ img.pg4img {
   border-left: 1px solid rgb(117, 116, 116);
   /* min-width: 300px; */
 }
+#main {
+  margin-bottom: 50px;
+  z-index: 10;
+  position: relative;
+}
 
 #page-6 {
-  min-height: 200vh;
+  min-height: 96vh;
+  bottom: 10vh;
   width: 100vw;
+  margin-bottom: 100px;
+  pointer-events: none;
+  /* border-bottom: 5px solid greenyellow; */
 }
 #footer {
   position: fixed;
-  z-index: 10; 
+  z-index: 9; 
   height: 100vh;
   width: 100%;
-  z-index: 9;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -425,7 +428,6 @@ img.pg4img {
   color: #dadada;
   justify-content: flex-end;
   padding-top: 4vw;
-  /* padding-bottom: 1vw; */
   padding-left: 3vw;
   padding-right: 3vw;
 }
@@ -530,7 +532,7 @@ img.pg4img {
   background-color: #00000097;
   position: fixed;
   z-index: 99;
-  top: -100%;
+  top: -110%;
   transition: all ease 0.8s;
 }
 #full-div1 {
@@ -727,7 +729,7 @@ img.pg4img {
 }
 
 #loader h1 {
-  font-size: 4vw;
+  font-size: 5vw;
   color: transparent;
   background: linear-gradient(to right, orange, orangered);
   -webkit-background-clip: text;
