@@ -89,7 +89,27 @@ function loaderAnimation() {
   }, 4000);
 }
 
+function swiperAnimation() {
+  new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    speed: 4000,
+    autoplay: {
+      delay: 2,
+      disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  swiperAnimation();
   setupPg4Tabs();
   page3Animation();
   swiperAnimation();
@@ -98,3 +118,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+gsap.set(".flair", {xPercent: -50, yPercent: -50});
+
+let xSetter = gsap.quickSetter(".flair", "x", "px") //apply it to the #id element's x property and append a "px" unit
+let ySetter = gsap.quickSetter(".flair", "y", "px") //apply it to the #id element's x property and append a "px" unit
+
+window.addEventListener("mousemove", e => {  
+  xSetter(e.x)
+  ySetter(e.y)
+});
