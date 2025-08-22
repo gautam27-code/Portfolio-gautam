@@ -404,7 +404,7 @@ img.pg4img {
 }
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .swiper-slide {
@@ -412,6 +412,7 @@ img.pg4img {
   scroll-padding: 0 2vw;
   padding: 40px;
   font-size: 18px;
+  height: 100%;
   width: 30% !important;
   cursor: -webkit-grab;
   cursor: grab;
@@ -837,10 +838,11 @@ img.pg4img {
   .swiper-slide {
     text-align: center;
     scroll-padding: 0 2vw;
-    padding: 40px;
+    margin-top: 30px;
+    padding: 30px;
     font-size: 18px;
-    height: 30%;
-    width: 60% !important;
+    height: 10px;
+    width: 70% !important;
     cursor: -webkit-grab;
     cursor: grab;
     /* border: 1px solid black; */
