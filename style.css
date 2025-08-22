@@ -579,7 +579,7 @@ img.pg4img {
 
   nav h1 {
     transition: all ease 0.4s;
-    height: 9vh;
+    font-size: 5vh;
   }
 
   #nav-part2 {
@@ -593,7 +593,7 @@ img.pg4img {
     border-radius: 50px;
     font-size: 4vw;
     font-weight: 200;
-    padding-left: 10vw;
+    /* padding-left: 10vw; */
     z-index: 1000;
   }
 
@@ -609,7 +609,7 @@ img.pg4img {
     align-items: flex-end;
     justify-content: space-between;
     border-bottom: 1px solid #0000003c;
-    padding: 7vw 5vw;
+    padding: 9vw 5vw;
     padding-bottom: 10vw;
     flex-direction: column-reverse;
     position: relative;
