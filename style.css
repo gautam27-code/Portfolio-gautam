@@ -427,7 +427,7 @@ img.pg4img {
 }
 
 #page-6 {
-  min-height: 192vh;
+  min-height: 94vh;
   bottom: 10vh;
   width: 100vw;
   margin-bottom: 100px;
@@ -564,6 +564,13 @@ img.pg4img {
   flex-direction: column;
   align-items: end;
   justify-content: flex-end;
+}
+#full-div1 h1 {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+#full-div1 h1:hover {
+  color: #fd3d16;
 }
 /* ////////////////////// */
 @media (max-width: 600px) {

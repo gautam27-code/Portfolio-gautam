@@ -68,7 +68,13 @@ function menuAnimation() {
   var menu = document.querySelector("nav h3");
   var full = document.querySelector("#full-scr");
   var navimg = document.querySelector("nav h1");
+  var resumeLink = document.querySelector("#full-div1 h1:first-child");
   var flag = 0;
+
+  resumeLink.addEventListener("click", function() {
+    window.open("/Gautam_Jain_Resume (2).pdf", "_blank");
+  });
+  
   menu.addEventListener("click", function () {
     if (flag == 0) {
       full.style.top = "0%";
