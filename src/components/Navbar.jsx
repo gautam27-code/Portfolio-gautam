@@ -5,7 +5,6 @@ const Navbar = ({ toggleMenu }) => {
         <nav>
             {/* semantics */}
             <h1>gautam.space</h1>
-            <img src="/Sundown logo.svg" alt="logo" />
             <div id="nav-part2">
                 <h4><a href="#">Work</a></h4>
                 <h4>
