@@ -14,8 +14,6 @@ const Loader = () => {
     <div
       id="loader"
       style={{
-        top: isVisible ? "0%" : "-100%",
-        transition: "top 0.5s ease",
         height: "100%",
         width: "100%",
         backgroundColor: "#000",

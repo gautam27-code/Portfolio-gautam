@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ toggleMenu }) => {
+const Navbar = ({ toggleMenu, openContact }) => {
     return (
         <nav>
             {/* semantics */}
@@ -16,7 +16,11 @@ const Navbar = ({ toggleMenu }) => {
                         Resume
                     </a>
                 </h4>
-                <h4><a href="#">Contact</a></h4>
+                <h4>
+                    <button onClick={openContact}>
+                        Contact
+                    </button>
+                </h4>
             </div>
             <h3 onClick={toggleMenu} style={{ cursor: "pointer" }}>Menu</h3>
         </nav>
@@ -24,3 +28,8 @@ const Navbar = ({ toggleMenu }) => {
 };
 
 export default Navbar;
+
+
+// Why button instead of <a>?
+// <a> → navigation (page reload)
+// button → triggers React logic (state change)

@@ -11,10 +11,12 @@ import DesignCodeExecute from "./components/DesignCodeExecute";
 import TechStack from "./components/TechStack";
 import Footer from "./components/Footer";
 import FullScreenMenu from "./components/FullScreenMenu";
+import ContactPanel from "./components/ContactPanel";
 
 const App = () => {
     const containerRef = useRef(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isContactOpen, setIsContactOpen] = useState(false);
 
     useEffect(() => {
         // Initialize Locomotive Scroll
@@ -36,9 +38,17 @@ const App = () => {
                 closeMenu={() => setIsMenuOpen(false)}
             />
 
+            <ContactPanel
+                isOpen={isContactOpen}
+                onClose={() => setIsContactOpen(false)}
+            />
+
             <div id="main" ref={containerRef} data-scroll-container>
                 <div id="page1" data-scroll-section>
-                    <Navbar toggleMenu={() => setIsMenuOpen(!isMenuOpen)} />
+                    <Navbar
+                        toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
+                        openContact={() => setIsContactOpen(true)}
+                    />
                     <Hero />
                 </div>
 
